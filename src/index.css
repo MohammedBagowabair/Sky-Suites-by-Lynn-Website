@@ -1,0 +1,27 @@
+:root { --paper: 246 242 234; --soft: 236 229 216; --ink: 17 22 40; --muted: 86 88 104; --deep: 14 22 48; --deep2: 10 16 36; --ondeep: 246 242 234; --ondeepm: 184 188 208; --accent: 217 178 111; --onaccent: 14 22 48; --accentink: 128 92 30; --accentlt: 230 200 143; --star: 217 178 111; --fd: 'Bodoni Moda', 'Didot', Georgia, serif; --fs: 'Karla', system-ui, sans-serif; --fdw: 500; --h2ls: -0.015em; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { @apply bg-paper text-ink font-sans antialiased; overflow-x: hidden; }
+section[id] { scroll-margin-top: 64px; }
+img { max-width: 100%; height: auto; }
+a, button, label { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid rgb(var(--accentink)); outline-offset: 3px; border-radius: 6px; }
+.on-deep :focus-visible { outline-color: rgb(var(--accentlt)); }
+.tap { min-height: 44px; min-width: 44px; }
+.h2 { font-family: var(--fd); line-height: 1.02; letter-spacing: var(--h2ls, -0.02em); font-weight: var(--fdw, 500); font-size: clamp(2.1rem, 6vw, 3.6rem); }
+.kicker { @apply inline-flex items-center gap-3 text-[12.5px] font-semibold uppercase tracking-[0.2em]; }
+.rail { scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
+.rail::-webkit-scrollbar { display: none; }
+.rail > * { scroll-snap-align: start; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .faq-i { transform: rotate(45deg); }
+h1, h2, h3, .h2, summary { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+.has-dialog [data-fab] { opacity: 0 !important; pointer-events: none !important; transform: translateY(100%) !important; }
+input[type=date] { min-height: 48px; }
+input[type=date]::-webkit-calendar-picker-indicator { cursor: pointer; opacity: .7; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .001ms !important; scroll-behavior: auto !important; } }

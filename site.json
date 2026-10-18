@@ -1,0 +1,8 @@
+{"repo":"Sky-Suites-by-Lynn-Website","name":"Sky Suites by Lynn","wa":"601160682399",
+"title":"Sky Suites by Lynn | Serviced suites on Jalan P. Ramlee, KLCC",
+"desc":"Serviced suites at 18 Jalan P. Ramlee, a 6-minute walk from the Petronas Twin Towers and 500 m from Suria KLCC. 3-bedroom city-view suite with kitchenette and washer. WhatsApp +60 11-6068 2399.",
+"theme":"#0E1630","ogAlt":"Sky Suites by Lynn – serviced suites on Jalan P. Ramlee near the Petronas Twin Towers",
+"fonts":[{"fam":"Bodoni Moda","w":"500","file":"bodoni.woff2"},{"fam":"Bodoni Moda","style":"italic","w":"500","file":"bodoni-italic.woff2"},{"fam":"Karla","w":"400 700","file":"karla.woff2"}],
+"preloadFonts":["bodoni.woff2","bodoni-italic.woff2","karla.woff2"],
+"heroPreload":"    <link rel=\"preload\" as=\"image\" type=\"image/webp\" imagesrcset=\"./images/hero-m-480.webp 480w, ./images/hero-m-720.webp 720w\" imagesizes=\"100vw\" media=\"(max-width: 1023px)\" fetchpriority=\"high\" />\n    <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"./images/hero-1400.webp\" media=\"(min-width: 1024px)\" fetchpriority=\"high\" />",
+"fs":"Karla","fd":"Bodoni Moda","c404bg":"#0E1630","c404fg":"#F6F2EA","c404acc":"#D9B26F","c404onacc":"#0E1630"}
